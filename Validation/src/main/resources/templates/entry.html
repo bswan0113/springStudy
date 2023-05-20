@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/calc}" method="post" th:object="${calcForm}">
+
+    <div>
+        <input type="text" th:field="*{leftNum}">
+        +
+        <input type="text" th:field="*{rightNum}">
+
+
+    </div>
+    <input type="submit" value="계산">
+
+</form>
+</body>
+</html>
